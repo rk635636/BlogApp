@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.example.rushikesh.blogapp.LoginActivity"
+    android:background="#ffffff">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:id="@+id/view"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/e_mail"
+            android:padding="15dp"
+
+            android:hint="Email"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:id="@+id/view1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/password"
+            android:padding="15dp"
+
+            android:hint="Password"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:id="@+id/button3"
+        android:layout_marginTop="35dp"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/view1"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_alignStart="@+id/view1"
+        android:layout_marginRight="20dp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/google"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="45dp"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3"></com.google.android.gms.common.SignInButton>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:id="@+id/textView3"
+        android:layout_marginTop="79dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:height="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/google"
+        android:layout_alignLeft="@+id/google"
+        android:layout_alignStart="@+id/google" />
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rushikesh.blogapp.BlogSingleAct">
+
+    <ImageView
+        android:id="@+id/ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/add_btn"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"/>
+
+
+
+    <TextView
+        android:id="@+id/tp"
+        android:padding="7dp"
+        android:text="Post Title"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/dp"
+        android:padding="7dp"
+        android:text="Post Description"
+        android:textSize="16dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tp"
+        android:layout_marginTop="14dp"
+        android:layout_alignLeft="@+id/tp"
+        android:layout_alignStart="@+id/tp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_name"
+        android:text="UserName"
+        android:textSize="14dp"
+        android:padding="7dp"
+        android:layout_below="@+id/dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/user_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp">
+
+        <ImageButton
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/like"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/gray_like" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Remove Post"
+        android:textColor="#FFFFFFFF"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:id="@+id/remove"/>
+
+
+</RelativeLayout>
